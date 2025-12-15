@@ -1,11 +1,11 @@
 FROM eclipse-temurin:17-jdk-alpine
 
-WORKDIR /app
+WORKDIR ./demo/app
 
-COPY ./pom.xml .
+COPY ./demo/pom.xml .
 RUN mvn dependency:go-offline -B
 
-COPY ./src ./src
+COPY ./demo/src ./src
 
 RUN mvn clean package -DskipTests
 
