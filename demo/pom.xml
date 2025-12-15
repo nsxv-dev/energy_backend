@@ -54,9 +54,13 @@
 			<artifactId>hibernate-validator</artifactId>
 		</dependency>
 		<dependency>
-<groupId>io.projectreactor.netty</groupId>
-<artifactId>reactor-netty</artifactId>
-</dependency>
+			<groupId>io.projectreactor.netty</groupId>
+			<artifactId>reactor-netty</artifactId>
+		</dependency>
+    		<dependency>
+        		<groupId>io.projectreactor</groupId>
+        		<artifactId>reactor-core</artifactId>
+    		</dependency>
 	</dependencies>
 
 	<build>
