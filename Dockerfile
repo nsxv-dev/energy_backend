@@ -1,4 +1,4 @@
-FROM maven:3.9-eclipse-temurin-21 AS build
+FROM maven:3.9.5-openjdk-21 AS build
 
 WORKDIR /app
 
@@ -9,7 +9,7 @@ COPY ./demo/src ./src
 
 RUN mvn clean package -DskipTests
 
-FROM eclipse-temurin:21-jdk-alpine
+FROM openjdk-21
 
 WORKDIR /app
 
